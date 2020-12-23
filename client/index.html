@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Морской бой</title>
+        <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="top">
+                <h1 align="center">Морской бой</h1>
+            </div>
+            <div id="mid">
+                <div id="left">
+                    <p align="center">Начать игру</p>
+                    <form name="start" action="" method="GET">
+                        <p>
+                            Ваше имя:<br>
+                            <input type="text" name="usermane" value="Иванов Иван"><br>
+                            <input type="submit" value="Начать игру">
+                        </p>
+                    </form>
+                </div>
+
+                <div id="right">
+                    <p align="center">Присоединиться к игре</p>
+                    <form name="connect" action="" method="GET">
+                        <p>
+                            Номер комнаты:<br>
+                            <input type="text" name="room_number" value="123456"><br>
+                            <input type="submit" value="Присоединиться">
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div id="bottom">
+                <p align="center">Посмотреть результаты</p>
+                <form align="center" margin-bottom="100px" name="view" action="" method="GET">
+                    <input type="submit" value="Посмотреть"><br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

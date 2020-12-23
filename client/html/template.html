@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Морской бой</title>
+        <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+    </head>
+    <body>
+        <table>
+            <thead>
+            <tr> <th>Skills</th> <th>Difficulty</th> <th>My
+            Level</th> </tr>
+            </thead>
+            <tbody>
+            <tr> <td>HTML</td> <td>Easy</td> <td>Some</td> </tr>
+            <tr> <td>CSS</td> <td>Medium</td> <td>A little</td>
+            </tr>
+            <tr> <td>JavaScript</td> <td>Hard</td> <td>Zero</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <form action="http://www.unn.ru/scripts/feedback.php"
+            method="get">
+            <p>Мы бы хотели знать Ваше мнение об этом курсе</p>
+            <textarea rows="3" cols="60" name="feedback" >
+            Введите ваш текст здесь
+            </textarea>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+
+        <form>
+            Введите Ваше имя <br>
+            <input type="text" name="feedback"> <br> <br>
+            Ваши домашние животные <br>
+            <input type="checkbox" name="items" value="cat">Кошка <br>
+            <input type="checkbox" name="items" value="dog"> Собака <br>
+            <input type="checkbox" name="items" value="fish"> Аквариумные
+            рыбки <br> <br>
+            Насколько хорошо вы знаете HTML<br>
+            <input type="radio" name="iq" value="high"> Отлично <br>
+            <input type="radio" name="iq" value="medium" checked> Средне
+            <br>
+            <input type="radio" name="iq" value="low"> Посредственно <br>
+            <br>
+        </form>
+
+        <form>
+            <p>Ваш родной город</p>
+            <select name="cities">
+            <option value=“msk">Москва</option>
+            <option value=“nn">Нижний Новгород</option>
+            <option value=“spb">Санкт-Петербург</option>
+            </select>
+        </form>
+
+        <label for="age">Возраст:</label>
+        <input type="text" name="age" required>
+
+
+        <form action="show.php">
+            <label for="age">Возраст:</label>
+            <input type="number" min="0" max="99" step="1" value="18"
+            name="age" required><br>
+            <label for="birthday">День рождения:</label>
+            <input type="date" name="birthday"><br>
+            <label for="wakeup">Время, в которое вы просыпаетесь:</label>
+            <input type="time" name="wakeup"><br>
+            <label for="color">Любимый цвет:</label>
+            <input type="color" name="color"> <br>
+            <label for="mood">Ваше настоение</label>
+            Ужасное <input type="range" min="0" max="100" step="5"
+            value="50" name="mood"> Отличное<br>
+            <input type="submit" value="Отправить!">
+        </form>
+
+        <form> <fieldset>
+            <legend>Персональная информация</legend>
+            Имя: <input type="text" name="firstName"> <br>
+            Фамилия: <input type="text" name="lastName"> <br>
+            </fieldset> <br>
+            <fieldset>
+            <legend>Ваши предпочтения</legend>
+            Любимый фильм <input type="text" name="favFilm"> <br>
+            Любимый …<input type="text" name="favSeason"> <br>
+            </fieldset> <br>
+            <input type="submit" value="Отправить">
+        </form>
+
+        <section>
+            <fieldset>
+            <legend>HTML</legend>
+            Язык разметки <br>
+            Сложность освоения: легко <br>
+            </fieldset> <br>
+            <fieldset>
+            <legend>JavaScript</legend>
+            Язык программирования<br>
+            Сложность освоения: средняя <br>
+            </fieldset> <br>
+        </section>
+    </body>
+</html>
