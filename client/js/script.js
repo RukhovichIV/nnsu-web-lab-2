@@ -1,3 +1,17 @@
+function on_start() {
+    var username = document.start.username.value;
+    go_play(123)
+    return;
+}
+
+function go_play(room_number) {
+    document.location = "./html/battlefield.html";
+}
+
+function check_results() {
+    document.location = "./html/results.html";
+}
+
 function getLink(bike_id) {
     var point = -1;
 

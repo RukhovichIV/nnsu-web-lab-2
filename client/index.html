@@ -14,22 +14,23 @@
             <div id="mid">
                 <div id="left">
                     <p align="center">Начать игру</p>
-                    <form name="start" action="" method="GET">
+                    <form name="start">
                         <p>
                             Ваше имя:<br>
-                            <input type="text" name="usermane" value="Иванов Иван"><br>
-                            <input type="submit" value="Начать игру">
+                            <input type="text" name="username" value="Иванов Иван"><br>
+                            <input type="button" value="Начать игру", onclick="on_start();">
                         </p>
                     </form>
                 </div>
 
                 <div id="right">
                     <p align="center">Присоединиться к игре</p>
-                    <form name="connect" action="" method="GET">
+                    <form name="connect">
                         <p>
                             Номер комнаты:<br>
-                            <input type="text" name="room_number" value="123456"><br>
-                            <input type="submit" value="Присоединиться">
+                            <input type="number" name="room_number" value="123456"><br>
+                            <input type="button" value="Присоединиться"
+                                   onclick="go_play(document.connect.room_number.value);">
                         </p>
                     </form>
                 </div>
@@ -37,8 +38,9 @@
 
             <div id="bottom">
                 <p align="center">Посмотреть результаты</p>
-                <form align="center" margin-bottom="100px" name="view" action="" method="GET">
-                    <input type="submit" value="Посмотреть"><br>
+                <form align="center" margin-bottom="100px" name="view">
+                    <input type="button" value="Посмотреть"
+                           onclick="check_results();">
                 </form>
             </div>
         </div>
