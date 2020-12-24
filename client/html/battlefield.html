@@ -8,16 +8,16 @@
         <style>
             .wrapper {
                 display: grid;
-                width: 70vh;
-                height: 70vh;
-                margin: 0 auto 0;        
+                width: 1000px;
+                height: 1000px;
+                margin: 0 auto 0;      
             }
 
             .cell {
                 display: block;
-                max-width: 100%;
-                height: auto;
-                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                object-fit:scale-down;
             }
         </style>
 
@@ -27,7 +27,9 @@
             Ожидание соперника
         </div>
         <div>
-            <div id='playground' class='wrapper' onload="place_field()" style="visibility: collapse;">
+            <div id='battlefield' class='wrapper'
+                 onload="alert('HI'); place_field();"
+                 style="visibility: collapse;">
             </div>
         </div>
     </body>
