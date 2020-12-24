@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Игра</title>
-        <link rel="stylesheet" href="../styles/style.css" type="text/css"/>
-        <script src='../js/game.js'></script>
-        <style>
-            .wrapper {
-                display: grid;
-                width: 1000px;
-                height: 1000px;
-                margin: 0 auto 0;      
-            }
 
-            .cell {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit:scale-down;
-            }
-        </style>
+<head>
+    <meta charset="utf-8">
+    <title>Игра</title>
+    <link rel="stylesheet" href="/client/styles/style.css" type="text/css" />
+    <script src='/client/js/game.js'></script>
+    <style>
+        .wrapper {
+            display: grid;
+            width: 70vh;
+            height: 70vh;
+            margin: 0 auto 0;
+        }
 
-    </head>
-    <body>
-        <div id="status">
-            Ожидание соперника
+        .cell {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="status_cont">
+            <h1 align="center" , id="status">Ожидение соперника</h1>
         </div>
-        <div>
-            <div id='battlefield' class='wrapper'
-                 onload="alert('HI'); place_field();"
-                 style="visibility: collapse;">
+        <div id="field">
+            <div id='my_field' class='wrapper' style="visibility: collapse; float: left;">
+            </div>
+            <div id='their_field' class='wrapper' style="visibility: collapse; float: right;">
             </div>
         </div>
-    </body>
+        <div id="turn">
+            <form align="center" name="turn">
+                <p>
+                    <input type="button" name="submit_butt" value="Утвердить поле" onclick="submit_field();">
+                    <input type="button" name="turn_butt" value="Сделать ход" onclick="make_turn();">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
 </html>

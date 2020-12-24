@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Морской бой</title>
-        <link rel="stylesheet" href="styles/style.css" type="text/css"/>
-        <script src="js/script.js"></script>
-    </head>
-    <body>
-        <div id="main">
-            <div id="top">
-                <h1 align="center">Морской бой</h1>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Морской бой</title>
+    <link rel="stylesheet" href="/client/styles/style.css" type="text/css" />
+    <script src="/client/js/script.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="top">
+            <h1 align="center">Морской бой</h1>
+        </div>
+        <div id="mid">
+            <div id="left">
+                <p align="center">Начать игру</p>
+                <form align="center" name="start">
+                    <p>
+                        <input type="button" value="Начать игру" onclick="on_start();">
+                    </p>
+                </form>
             </div>
-            <div id="mid">
-                <div id="left">
-                    <p align="center">Начать игру</p>
-                    <form align="center" name="start">
-                        <p>
-                            <input type="button" value="Начать игру" onclick="on_start();">
-                        </p>
-                    </form>
-                </div>
-                <div id="right">
-                    <p align="center">Посмотреть результаты</p>
-                    <form align="center" name="view">
-                        <p>
-                            <input type="button" value="Посмотреть" onclick="check_results();">
-                        </p>
-                    </form>
-                </div>
+            <div id="right">
+                <p align="center">Посмотреть результаты</p>
+                <form align="center" name="view">
+                    <p>
+                        <input type="button" value="Посмотреть" onclick="check_results();">
+                    </p>
+                </form>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
